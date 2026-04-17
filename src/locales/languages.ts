@@ -18,6 +18,14 @@ export const languages: SupportedLanguage[] = [
     currencySymbol: '$',
   },
   {
+    label: 'Español',
+    shortLabel: 'spa',
+    icon: 'twemoji:flag-ecuador',
+    locale: 'es-EC',
+    currency: 'USD',
+    currencySymbol: '$',
+  },
+  {
     label: 'Française',
     shortLabel: 'fra',
     icon: 'twemoji:flag-france',

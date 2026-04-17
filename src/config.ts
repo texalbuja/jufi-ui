@@ -7,7 +7,7 @@ export type SidenavType = 'default' | 'stacked' | 'slim';
 export type TopnavType = 'default' | 'stacked' | 'slim';
 export type TextDirection = 'ltr' | 'rtl';
 export type NavColor = 'default' | 'vibrant';
-export type SupportedLocales = 'en-US' | 'fr-FR' | 'bn-BD' | 'zh-CN' | 'hi-IN' | 'ar-SA';
+export type SupportedLocales = 'en-US' | 'fr-FR' | 'bn-BD' | 'zh-CN' | 'hi-IN' | 'ar-SA' | 'es-EC';
 
 export interface Config {
   assetsDir: string;
@@ -28,13 +28,13 @@ export const initialConfig: Config = {
   textDirection: 'ltr',
   themePreset: 'default-light',
   navigationMenuType: 'sidenav',
-  sidenavType: 'default',
+  sidenavType: 'stacked',
   sidenavCollapsed: false,
   topnavType: 'default',
   navColor: 'default',
   openNavbarDrawer: false,
   drawerWidth: mainDrawerWidth.full,
-  locale: 'en-US',
+  locale: 'es-EC',
 };
 
 export const defaultJwtAuthCredentials = {

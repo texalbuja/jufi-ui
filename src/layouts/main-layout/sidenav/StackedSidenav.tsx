@@ -6,7 +6,6 @@ import {
   ListItem,
   ListSubheader,
   Stack,
-  Typography,
   useTheme,
 } from '@mui/material';
 import Box from '@mui/material/Box';
@@ -25,7 +24,6 @@ import { demoUser } from 'providers/auth-provider/AuthJwtProvider';
 import sitemap, { MenuItem, SubMenuItem } from 'routes/sitemap';
 import { sidenavVibrantStyle } from 'theme/styles/vibrantNav';
 import IconifyIcon from 'components/base/IconifyIcon';
-import StatusAvatar from 'components/base/StatusAvatar';
 import Logo from 'components/common/Logo';
 import VibrantBackground from 'components/common/VibrantBackground';
 import { useNavContext } from '../NavProvider';
@@ -206,24 +204,6 @@ const StackedSidenav = () => {
                   width: 1,
                 }}
               >
-                <StatusAvatar
-                  status="online"
-                  alt={user.name}
-                  src={user.avatar || undefined}
-                  sx={{ width: 36, height: 36 }}
-                />
-                <Typography
-                  variant="body2"
-                  sx={{
-                    color: 'text.secondary',
-                    textWrap: 'nowrap',
-                  }}
-                >
-                  {user.name}
-                </Typography>
-                <IconButton sx={{ ml: 'auto' }}>
-                  <IconifyIcon icon="material-symbols:settings-outline" />
-                </IconButton>
               </Stack>
             )}
           </Toolbar>

@@ -24,23 +24,23 @@ export interface MenuItem {
 
 const sitemap: MenuItem[] = [
   {
-    id: 'pages',
-    subheader: 'Pages',
-    key: 'pages',
-    icon: 'material-symbols:view-quilt-outline',
+    id: 'pagos',
+    subheader: 'Pagos',
+    key: 'pagos',
+    icon: 'material-symbols:payments-outline-rounded',
     items: [
       {
-        name: 'Starter',
-        key: 'starter',
+        name: 'Consolidado Histórico',
+        key: 'consolidado_historico',
         path: rootPaths.root,
-        pathName: 'starter',
+        pathName: 'consolidado-historico',
         icon: 'material-symbols:play-circle-outline-rounded',
         active: true,
       },
       {
-        name: 'Error 404',
-        key: 'error_404',
-        pathName: 'error',
+        name: 'Nuevos Movimientos',
+        key: 'ingreso_nuevos_movimientos',
+        pathName: 'ingreso-nuevos-movimientos',
         active: true,
         icon: 'material-symbols:warning-outline-rounded',
         path: paths[404],
