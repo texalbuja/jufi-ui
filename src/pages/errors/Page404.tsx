@@ -35,10 +35,7 @@ const Page404 = () => {
             height: 'auto',
           }}
         >
-          <Lottie
-            animationData={isDark ? animation404Dark : animation404}
-            style={{ width: '100%', height: '100%' }}
-          />
+          
         </Box>
         <Box
           sx={{
@@ -53,7 +50,7 @@ const Page404 = () => {
               mb: 2,
             }}
           >
-            Page not found
+            Página no encontrada!
           </Typography>
           <Typography
             variant="h5"
@@ -63,21 +60,11 @@ const Page404 = () => {
               mb: 5,
             }}
           >
-            No worries! Let’s take you back{' '}
-            <Box
-              component="br"
-              sx={{
-                display: {
-                  xs: 'none',
-                  sm: 'block',
-                },
-              }}
-            />
-            while our bear is searching everywhere
+            ¡No te preocupes! Vamos a llevarte de vuelta{' '}
           </Typography>
 
           <Button variant="contained" href="/" size="large" sx={{ px: 7 }}>
-            Go Back Home{' '}
+            Volver a inicio{' '}
           </Button>
         </Box>
       </Stack>

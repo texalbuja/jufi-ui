@@ -21,12 +21,6 @@ const Signup = lazy(() => import('pages/authentication/default/jwt/Signup'));
 const ForgotPassword = lazy(() => import('pages/authentication/default/jwt/ForgotPassword'));
 const TwoFA = lazy(() => import('pages/authentication/default/jwt/TwoFA'));
 const SetPassword = lazy(() => import('pages/authentication/default/jwt/SetPassword'));
-const FirebaseLogin = lazy(() => import('pages/authentication/default/firebase/Login'));
-const FirebaseSignup = lazy(() => import('pages/authentication/default/firebase/Signup'));
-const FirebaseForgotPassword = lazy(
-  () => import('pages/authentication/default/firebase/ForgotPassword'),
-);
-const Auth0Login = lazy(() => import('pages/authentication/default/auth0/Login'));
 
 export const SuspenseOutlet = () => {
   const location = useLocation();
@@ -106,32 +100,6 @@ export const routes: RouteObject[] = [
                   {
                     path: paths.defaultJwtSetPassword,
                     element: <SetPassword />,
-                  },
-                ],
-              },
-              {
-                path: rootPaths.authDefaultFirebaseRoot,
-                children: [
-                  {
-                    path: paths.defaultFirebaseLogin,
-                    element: <FirebaseLogin />,
-                  },
-                  {
-                    path: paths.defaultFirebaseSignup,
-                    element: <FirebaseSignup />,
-                  },
-                  {
-                    path: paths.defaultFirebaseForgotPassword,
-                    element: <FirebaseForgotPassword />,
-                  },
-                ],
-              },
-              {
-                path: rootPaths.authDefaultAuth0Root,
-                children: [
-                  {
-                    path: paths.defaultAuth0Login,
-                    element: <Auth0Login />,
                   },
                 ],
               },

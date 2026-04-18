@@ -141,7 +141,6 @@ const MainLayout = ({ children }: PropsWithChildren) => {
                 {children}
               </Box>
             </Box>
-            <Footer />
           </Box>
         </NavProvider>
       </Box>

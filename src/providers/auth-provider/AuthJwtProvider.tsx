@@ -67,10 +67,10 @@ export const useAuth = () => use(AuthJwtContext);
 
 export const demoUser: SessionUser = {
   id: 0,
-  email: 'guest@mail.com',
-  name: 'Guest',
-  avatar: users[13].avatar,
-  designation: 'Merchant Captian ',
+  email: 'invitado@mail.com',
+  name: 'Invitado',
+  avatar: users[11].avatar,
+  designation: 'Supervisor de Cartera',
 };
 
 export default AuthJwtProvider;

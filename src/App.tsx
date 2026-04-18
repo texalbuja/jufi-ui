@@ -26,7 +26,6 @@ const App = () => {
     <AuthProvider>
       <Outlet />
       <SettingsPanel />
-      <SettingPanelToggler />
     </AuthProvider>
   );
 };

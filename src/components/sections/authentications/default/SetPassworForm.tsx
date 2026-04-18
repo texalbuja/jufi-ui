@@ -94,7 +94,7 @@ const SetPasswordForm = ({ handleSetPassword }: SetPasswordFormProps) => {
               mb: 2,
             }}
           >
-            Set new password
+            Establecer nueva contraseña
           </Typography>
           <Typography
             variant="body1"
@@ -102,10 +102,9 @@ const SetPasswordForm = ({ handleSetPassword }: SetPasswordFormProps) => {
               mb: 1,
             }}
           >
-            Create a new password for your account. New password must be different from any previous
-            passwords.
+            Cree una nueva contraseña para su cuenta. La nueva contraseña debe ser diferente de cualquier contraseña anterior.
             <Link href="#!" sx={{ ml: 1 }}>
-              See password policy
+              Ver política de contraseñas
             </Link>
           </Typography>
         </Grid>

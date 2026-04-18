@@ -99,7 +99,7 @@ const NotificationMenu = ({ type = 'default' }: NotificationMenuProps) => {
         sx={{
           [`& .${paperClasses.root}`]: {
             width: 400,
-            height: 650,
+            height: 400,
             display: 'flex',
             flexDirection: 'column',
           },
@@ -113,12 +113,6 @@ const NotificationMenu = ({ type = 'default' }: NotificationMenuProps) => {
               variant="small"
               onItemClick={handleClose}
             />
-            <NotificationList
-              title="Older"
-              notifications={notifications.older}
-              variant="small"
-              onItemClick={handleClose}
-            />
           </SimpleBar>
         </Box>
         <Stack
@@ -129,7 +123,7 @@ const NotificationMenu = ({ type = 'default' }: NotificationMenuProps) => {
           }}
         >
           <Button component={Link} underline="none" href="#!" variant="text" color="primary">
-            Load more notifications
+            Cargar más notificaciones
           </Button>
         </Stack>
       </Popover>

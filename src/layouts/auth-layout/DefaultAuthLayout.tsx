@@ -93,54 +93,6 @@ const DefaultAuthLayout = ({ children }: PropsWithChildren) => {
               justifyContent: 'center',
             }}
           >
-            <Tabs
-              value={value}
-              onChange={handleChange}
-              sx={{
-                bgcolor: 'background.elevation1',
-                p: 1,
-                borderRadius: 9,
-                [`& .${tabsClasses.indicator}`]: {
-                  height: 1,
-                  bgcolor: (theme) => cssVarRgba(theme.vars.palette.primary.mainChannel, 0.1),
-                  borderRadius: 12,
-                },
-              }}
-            >
-              <Tab
-                component={Link}
-                underline="none"
-                href={paths.defaultJwtLogin}
-                value="jwt"
-                label="jwt"
-                icon={<JwtIcon />}
-                iconPosition="start"
-                disableRipple
-                sx={{ px: 1.75 }}
-              />
-              <Tab
-                component={Link}
-                underline="none"
-                href={paths.defaultAuth0Login}
-                value="auth0"
-                label="Auth 0"
-                icon={<Auth0Icon />}
-                iconPosition="start"
-                disableRipple
-                sx={{ px: 1.75 }}
-              />
-              <Tab
-                component={Link}
-                underline="none"
-                href={paths.defaultFirebaseLogin}
-                value="firebase"
-                label="Firebase"
-                icon={<FirebaseIcon />}
-                iconPosition="start"
-                disableRipple
-                sx={{ px: 1.75 }}
-              />
-            </Tabs>
           </Stack>
         </Stack>
       </Grid>

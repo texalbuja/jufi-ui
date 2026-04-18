@@ -60,7 +60,7 @@ const NotificationTabPanel = ({ value, notificationsData }: NotificationTabPanel
       {notificationsData.length > 10 && (
         <Divider sx={{ [`& .${dividerClasses.wrapper}`]: { p: 0 } }}>
           <Button color="neutral" variant="soft" sx={{ borderRadius: 10 }}>
-            Load more notifications
+            Cargar más notificaciones
           </Button>
         </Divider>
       )}

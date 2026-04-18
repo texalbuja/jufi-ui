@@ -94,11 +94,10 @@ const ForgotPasswordForm = ({ provider = 'jwt', handleSendResetLink }: ForgotPas
               mb: 2,
             }}
           >
-            Forgot Password?
+            ¿Olvidó su contraseña?
           </Typography>
           <Typography variant="body1">
-            Please enter your email address and an email with a link to reset your password will be
-            sent.
+            Por favor, ingrese su dirección de correo electrónico y se enviará un correo electrónico con un enlace para restablecer su contraseña.
           </Typography>
         </Grid>
         <Grid size={12}>
@@ -136,26 +135,8 @@ const ForgotPasswordForm = ({ provider = 'jwt', handleSendResetLink }: ForgotPas
                   variant="contained"
                   disabled={linkSent}
                 >
-                  Send Reset Link {time > 0 ? ` in ${time} s` : ''}
+                  Enviar enlace de restablecimiento {time > 0 ? ` en ${time} s` : ''}
                 </Button>
-              </Grid>
-              <Grid
-                sx={{
-                  mb: 6,
-                }}
-                size={12}
-              >
-                <Typography
-                  variant="subtitle2"
-                  sx={{
-                    color: 'text.secondary',
-                  }}
-                >
-                  Don&apos;t have access to that email?
-                  <Link href="#!" sx={{ ml: 1 }}>
-                    Try alternate methods
-                  </Link>
-                </Typography>
               </Grid>
             </Grid>
           </Box>

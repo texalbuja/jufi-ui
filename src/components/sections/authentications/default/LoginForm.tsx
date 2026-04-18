@@ -48,8 +48,8 @@ const LoginForm = ({
   handleLogin,
   signUpLink,
   forgotPasswordLink,
-  socialAuth = true,
-  rememberDevice = true,
+  socialAuth = false,
+  rememberDevice = false,
   defaultCredential,
 }: LoginFormProps) => {
   const {
@@ -107,18 +107,7 @@ const LoginForm = ({
               alignItems: { xs: 'flex-start', sm: 'flex-end' },
             }}
           >
-            <Typography variant="h4">Log in</Typography>
-            <Typography
-              variant="subtitle2"
-              sx={{
-                color: 'text.secondary',
-              }}
-            >
-              Don&apos;t have an account?
-              <Link href={signUpLink} sx={{ ml: 1 }}>
-                Sign up
-              </Link>
-            </Typography>
+            <Typography variant="h4">Iniciar Sesión</Typography>
           </Stack>
         </Grid>
         {socialAuth && (
@@ -127,7 +116,7 @@ const LoginForm = ({
               <SocialAuth />
             </Grid>
             <Grid size={12}>
-              <Divider sx={{ color: 'text.secondary' }}>or use email</Divider>
+              <Divider sx={{ color: 'text.secondary' }}>o usar correo electrónico</Divider>
             </Grid>
           </>
         )}
@@ -139,7 +128,6 @@ const LoginForm = ({
                 {errors.root?.credential?.message}
               </Alert>
             )}
-            {defaultCredential && <DefaultCredentialAlert />}
             <Grid container>
               <Grid
                 sx={{
@@ -152,7 +140,7 @@ const LoginForm = ({
                   size="large"
                   id="email"
                   type="email"
-                  label="Email"
+                  label="Correo electrónico"
                   defaultValue={defaultCredential?.email}
                   error={!!errors.email}
                   helperText={<>{errors.email?.message}</>}
@@ -169,7 +157,7 @@ const LoginForm = ({
                   fullWidth
                   size="large"
                   id="password"
-                  label="Password"
+                  label="Contraseña"
                   defaultValue={defaultCredential?.password}
                   error={!!errors.password}
                   helperText={<>{errors.password?.message}</>}
@@ -199,7 +187,7 @@ const LoginForm = ({
                             color: 'text.secondary',
                           }}
                         >
-                          Remember this device
+                          Recordar este dispositivo
                         </Typography>
                       }
                     />
@@ -207,7 +195,7 @@ const LoginForm = ({
 
                   {forgotPasswordLink && (
                     <Link href={forgotPasswordLink} variant="subtitle2">
-                      Forgot Password?
+                      ¿Olvidó su contraseña?
                     </Link>
                   )}
                 </Stack>
@@ -220,7 +208,7 @@ const LoginForm = ({
                   variant="contained"
                   loading={isSubmitting}
                 >
-                  Log in
+                  Iniciar Sesión
                 </Button>
               </Grid>
             </Grid>
@@ -228,7 +216,7 @@ const LoginForm = ({
         </Grid>
       </Grid>
       <Link href="#!" variant="subtitle2">
-        Trouble signing in?
+        ¿Problemas para iniciar sesión?
       </Link>
     </Stack>
   );

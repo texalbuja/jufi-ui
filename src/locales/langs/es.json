@@ -32,12 +32,12 @@
   "events": "Eventos",
   "create_event": "Crear evento",
   "event_detail": "Detalle del evento",
-  "authentication": "Autenticacion",
-  "login": "Iniciar sesion",
+  "authentication": "Autenticación",
+  "login": "Iniciar sesión",
   "sign_up": "Registrarse",
-  "forgot_password": "Olvido su contrasena",
+  "forgot_password": "Olvidó su contraseña",
   "2fa": "2FA",
-  "set_password": "Establecer contrasena",
+  "set_password": "Establecer contraseña",
   "error_404": "Error 404",
   "misc": "Varios",
   "landing": "Landing",
@@ -68,5 +68,8 @@
   "boards": "Tableros",
   "create_board": "Crear tablero",
   "consolidado_historico": "Consolidado Histórico",
-  "ingreso_nuevos_movimientos": "Nuevos Movimientos"
+  "ingreso_nuevos_movimientos": "Nuevos Movimientos",
+  "analisis_mora_cliente": "Análisis de Mora por Cliente",
+  "controles_antifraude": "Controles Antifraude",
+  "consolidacion_pagos": "Consolidación de Pagos"
 }

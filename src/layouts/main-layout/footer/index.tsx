@@ -21,49 +21,6 @@ const Footer = () => {
           },
         ]}
       >
-        <Typography
-          variant="caption"
-          component="p"
-          sx={{
-            lineHeight: 1.6,
-            fontWeight: 'light',
-            color: 'text.secondary',
-            display: 'flex',
-            flexDirection: { xs: 'column', sm: 'row' },
-          }}
-        >
-          <Box component="span" whiteSpace="nowrap">
-            Thank you for creating with
-            <Box component="strong" mx={0.5}>
-              Aurora{' '}
-            </Box>
-          </Box>
-
-          <Box component="span" whiteSpace="nowrap">
-            <Box component="span" display={{ xs: 'none', sm: 'inline' }}>
-              |
-            </Box>{' '}
-            {dayjs().year()} ©
-            <Link
-              href="https://themewagon.com/"
-              target="_blank"
-              sx={{ textDecoration: 'none', mx: 0.5 }}
-            >
-              ThemeWagon
-            </Link>
-          </Box>
-        </Typography>
-
-        <Typography
-          variant="caption"
-          component="p"
-          sx={{
-            fontWeight: 'light',
-            color: 'text.secondary',
-          }}
-        >
-          v{import.meta.env.VITE_APP_VERSION}
-        </Typography>
       </Stack>
     </>
   );

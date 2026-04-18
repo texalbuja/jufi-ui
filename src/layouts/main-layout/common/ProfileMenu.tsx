@@ -170,48 +170,30 @@ const ProfileMenu = ({ type = 'default' }: ProfileMenuProps) => {
         </Stack>
         <Divider />
         <Box sx={{ py: 1 }}>
-          <ProfileMenuItem icon="material-symbols:accessible-forward-rounded" onClick={handleClose}>
-            Accessibility
-          </ProfileMenuItem>
-
+          
           <ProfileMenuItem icon="material-symbols:settings-outline-rounded" onClick={handleClose}>
-            Preferences
-          </ProfileMenuItem>
-
-          <ProfileMenuItem
-            onClick={() => setThemeMode()}
-            icon="material-symbols:dark-mode-outline-rounded"
-          >
-            Dark mode
-            <Switch checked={isDark} onChange={() => setThemeMode()} sx={{ ml: 'auto' }} />
+            Preferencias
           </ProfileMenuItem>
         </Box>
         <Divider />
         <Box sx={{ py: 1 }}>
           <ProfileMenuItem
-            icon="material-symbols:manage-accounts-outline-rounded"
-            onClick={handleClose}
-            href="#!"
-          >
-            Account Settings
-          </ProfileMenuItem>
-          <ProfileMenuItem
             icon="material-symbols:question-mark-rounded"
             onClick={handleClose}
             href="#!"
           >
-            Help Center
+            Manual de Usuario
           </ProfileMenuItem>
         </Box>
         <Divider />
         <Box sx={{ py: 1 }}>
           {sessionUser ? (
             <ProfileMenuItem onClick={handleSignout} icon="material-symbols:logout-rounded">
-              Sign Out
+              Cerrar Sesión
             </ProfileMenuItem>
           ) : (
             <ProfileMenuItem href={authPaths.login} icon="material-symbols:login-rounded">
-              Sign In
+              Iniciar Sesión
             </ProfileMenuItem>
           )}
         </Box>
